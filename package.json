@@ -5,6 +5,8 @@
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
+    "deploy": "npm run build && npm run deploy-only",
+    "deploy-only": "gh-pages -d dist -m \"Build from commit $(git log -n 1 --format=%h)\"",
     "lint": "vue-cli-service lint",
     "test:e2e": "vue-cli-service test:e2e",
     "test:unit": "vue-cli-service test:unit"
@@ -25,6 +27,7 @@
     "chai": "^4.1.2",
     "eslint": "^5.8.0",
     "eslint-plugin-vue": "^5.0.0-0",
+    "gh-pages": "^2.0.1",
     "vue-template-compiler": "^2.5.17"
   }
 }
