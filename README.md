@@ -1,39 +1,39 @@
 # xmas-game
 
-## Project setup
+[![CircleCI](https://circleci.com/gh/boushi-bird/xmas-game.svg?style=svg)](https://circleci.com/gh/boushi-bird/xmas-game)
+
+## セットアップ
 ```
 npm install
 ```
 
-### Compiles and hot-reloads for development
-```
+### ローカルでバッグ
+```shell
 npm run serve
+# open http://localhost:8080
 ```
 
-### Compiles and minifies for production
-```
+### ビルド
+```shell
 npm run build
 ```
 
-### Run your tests
-```
-npm run test
-```
-
-### Lints and fixes files
-```
+### 構文チェック
+```shell
 npm run lint
 ```
 
-### Run your end-to-end tests
-```
+### E2Eテスト
+```shell
 npm run test:e2e
 ```
 
-### Run your unit tests
-```
+### ユニットテスト
+```shell
 npm run test:unit
 ```
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+### デプロイ
+```shell
+npm run deploy
+```
