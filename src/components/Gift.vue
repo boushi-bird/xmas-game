@@ -1,6 +1,7 @@
 <template>
   <div class="gift">
     <img :src="gift.image" />
+    <div class="protect-image"></div>
   </div>
 </template>
 
@@ -18,6 +19,7 @@ export default {
 
 <style scoped>
 .gift {
+  position: relative;
   min-width: 110px;
   min-height: 110px;
   display: flex;
@@ -28,5 +30,18 @@ export default {
 .gift img {
   max-width: 100px;
   max-height: 100px;
+  -webkit-touch-callout: none;
+}
+
+.protect-image {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  padding: 0;
+  border: 0;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  background-color: yellow;
 }
 </style>
