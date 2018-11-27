@@ -47,7 +47,7 @@ export default {
     },
     giftDrop($event) {
       const { dataTransfer } = $event;
-      const giftId = dataTransfer.getData('text/plain');
+      const giftId = dataTransfer.getData('text');
       this.$store.commit({
         type: 'present',
         giftId,

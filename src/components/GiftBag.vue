@@ -25,7 +25,7 @@ export default {
     giftDragStart($event, gift) {
       const { dataTransfer } = $event;
       dataTransfer.effectAllowed = 'link';
-      dataTransfer.setData('text/plain', gift.id);
+      dataTransfer.setData('text', gift.id);
     },
   },
 };
