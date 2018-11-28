@@ -27,5 +27,5 @@ jobs:
           key: v1-npm-deps-{{ checksum "package-lock.json" }}
 
       - run:
-        - name: Unit test
-        - command: npm run test:unit
+        name: Unit test
+        command: npm run test:unit
