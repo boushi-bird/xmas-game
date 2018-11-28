@@ -6,7 +6,7 @@
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "deploy": "npm run build && npm run deploy-only",
-    "deploy-only": "gh-pages -d dist -m \"Build from commit $(git log -n 1 --format=%h)\"",
+    "deploy-only": "gh-pages -d dist -m \"Build from commit $(git log -n 1 --format=%h) [ci skip]\"",
     "lint": "vue-cli-service lint",
     "test:e2e": "vue-cli-service test:e2e",
     "test:unit": "vue-cli-service test:unit"
