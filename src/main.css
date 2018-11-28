@@ -8,3 +8,8 @@ img {
   user-select: none;
   -webkit-user-drag: none;
 }
+
+*[draggable=true] {
+  cursor: pointer;
+  user-select: none;
+}
