@@ -12,6 +12,7 @@
     "test:unit": "vue-cli-service test:unit"
   },
   "dependencies": {
+    "mobile-drag-drop": "^2.3.0-rc.1",
     "vue": "^2.5.17",
     "vuex": "^3.0.1"
   },

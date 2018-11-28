@@ -2,6 +2,7 @@ import Vue from 'vue';
 import App from './App.vue';
 import store from './store/';
 import './main.css';
+import './dnd-polyfill';
 
 Vue.config.productionTip = false;
 
