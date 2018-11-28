@@ -63,7 +63,7 @@ export default {
   display: flex;
   align-items: center;
   position: relative;
-  min-width: 320px;
+  min-width: 300px;
   max-width: 400px;
   min-height: 200px;
 }
@@ -86,7 +86,7 @@ img.face {
 
 .face {
   position: absolute;
-  right: 20px;
+  right: 0px;
 }
 
 .wish {

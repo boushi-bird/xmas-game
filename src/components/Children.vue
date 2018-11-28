@@ -23,6 +23,6 @@ export default {
   display: grid;
   width: 100%;
   max-width: 640px;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
 </style>
