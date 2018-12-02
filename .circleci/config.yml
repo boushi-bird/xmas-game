@@ -62,9 +62,9 @@ workflows:
   version: 2
   test_and_deploy:
     - install
-    - test
+    - test:
       requires:
         - install
-    - deploy
+    - deploy:
       requires:
         - test
