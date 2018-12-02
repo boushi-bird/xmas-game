@@ -11,7 +11,7 @@ new Vue({
   render: h => h(App),
 }).$mount('#app');
 
-document.addEventListener('dragstart', event => {
+global.document.addEventListener('dragstart', event => {
   const { target } = event;
   const draggable = target.getAttribute('draggable');
   // 明示的にdraggableにしている要素以外ドラッグ禁止
