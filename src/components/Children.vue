@@ -22,7 +22,7 @@ export default {
   margin: 10px auto;
   display: grid;
   width: 100%;
-  max-width: 640px;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  max-width: 580px;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
 }
 </style>

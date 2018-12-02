@@ -20,16 +20,16 @@ export default {
 <style scoped>
 .gift {
   position: relative;
-  min-width: 110px;
-  min-height: 110px;
+  min-width: 90px;
+  min-height: 90px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .gift img {
-  max-width: 100px;
-  max-height: 100px;
+  max-width: 80px;
+  height: 80px;
   -webkit-touch-callout: none;
 }
 

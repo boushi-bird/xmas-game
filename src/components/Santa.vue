@@ -3,7 +3,7 @@
     <div class="main">
       <img :src="mainImage" />
     </div>
-    <div>{{message}}<button @click="reload" v-if="failure">やり直し</button></div>
+    <div class="message">{{message}}<button @click="reload" v-if="failure">やり直し</button></div>
     <GiftBag />
   </div>
 </template>
@@ -48,19 +48,27 @@ export default {
 .santa {
   margin: 10px auto;
   width: 100%;
-  max-width: 640px;
+  max-width: 580px;
   text-align: center;
 }
 
 .main {
-  min-height: 350px;
+  min-height: 280px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .main img {
-  max-width: 500px;
-  max-height: 340px;
+  min-width: 320px;
+  min-height: 210px;
+  max-width: 400px;
+  max-height: 270px;
+}
+
+.message {
+  width: 100%;
+  height: 56px;
+  font-size: 18px;
 }
 </style>

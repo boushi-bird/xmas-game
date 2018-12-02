@@ -69,8 +69,8 @@ export default {
 }
 
 img.face {
-  max-width: 200px;
-  max-height: 200px;
+  max-width: 160px;
+  height: 160px;
 }
 
 .sock {
@@ -94,8 +94,8 @@ img.face {
   padding: 5px;
   top: 0;
   right: 0;
-  width: 80px;
-  height: 80px;
+  width: 50px;
+  height: 50px;
   background-image: url(../assets/wish.png);
   background-size: contain;
   background-repeat: no-repeat;
@@ -103,7 +103,7 @@ img.face {
 }
 
 .wish img {
-  max-height: 50px;
+  max-height: 40px;
   -webkit-filter: brightness(0%);
   filter: brightness(0%);
 }

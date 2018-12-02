@@ -36,7 +36,7 @@ export default {
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 126px;
+  min-height: 100px;
   border: solid 3px black;
   border-radius: 20px;
 }
