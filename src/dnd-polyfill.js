@@ -11,6 +11,8 @@ if (result) {
     event.preventDefault();
   });
 
+  global.addEventListener('touchmove', () => {}, { passive: false });
+
   const disableNativeDragAndDrop = event => {
     if (!event.isTrusted) {
       return;
