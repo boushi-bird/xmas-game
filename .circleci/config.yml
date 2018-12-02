@@ -55,6 +55,10 @@ jobs:
           at: .
 
       - run:
+          name: ssh-keyscan
+          command: ssh-keyscan github.com >> ~/.ssh/known_hosts
+
+      - run:
           name: Deploy
           command: npm run deploy
 
