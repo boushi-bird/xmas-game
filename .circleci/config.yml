@@ -24,9 +24,10 @@ jobs:
           key: v1-npm-deps-{{ checksum "package-lock.json" }}
 
       - persist_to_workspace:
-          root: .
+          root: ~/
           paths:
-            - .
+            - repo
+            - .ssh
 
   test:
 
@@ -53,10 +54,6 @@ jobs:
     steps:
       - attach_workspace:
           at: .
-
-      - run:
-          name: ssh-keyscan
-          command: ssh-keyscan github.com >> ~/.ssh/known_hosts
 
       - run:
           name: Deploy
