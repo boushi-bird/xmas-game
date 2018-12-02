@@ -32,7 +32,7 @@ export default {
         case 'success':
           return 'Merry Christmas!';
         default:
-          return 'こどもたちにプレゼントをくばろう！';
+          return 'くつしたに こどもたちが ほしがっている プレゼントを いれよう！';
       }
     },
   },
