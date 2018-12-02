@@ -61,10 +61,11 @@ jobs:
 workflows:
   version: 2
   test_and_deploy:
-    - install
-    - test:
-      requires:
-        - install
-    - deploy:
-      requires:
-        - test
+    jobs:
+      - install
+      - test:
+        requires:
+          - install
+      - deploy:
+        requires:
+          - test
