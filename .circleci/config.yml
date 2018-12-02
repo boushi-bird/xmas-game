@@ -24,9 +24,9 @@ jobs:
           key: v1-npm-deps-{{ checksum "package-lock.json" }}
 
       - persist_to_workspace:
-        root: .
-        paths:
-          - .
+          root: .
+          paths:
+            - .
 
   test:
 
@@ -37,7 +37,7 @@ jobs:
 
     steps:
       - attach_workspace:
-        at: .
+          at: .
 
       - run:
           name: Unit test
@@ -52,7 +52,7 @@ jobs:
 
     steps:
       - attach_workspace:
-        at: .
+          at: .
 
       - run:
           name: Deploy
